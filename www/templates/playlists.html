@@ -1,0 +1,20 @@
+<ion-view view-title="Grababite - 'The Snappy App'">
+  <ion-content>
+     <div ng-controller="PlaylistsCtrl">
+     {{positions[0]}} jewnc
+         <ng-map zoom="14" center="{{currentCoords}}" 
+         styles="[{stylers:[{hue:'#890000'},{visibility:'simplified'},{gamma:0.5},{weight:0.5}]},{elementType:'labels',stylers:[{visibility:'off'}]},{featureType:'water',stylers:[{color:'#890000'}]}]">
+         
+           <marker ng-repeat="p in positions"
+           
+             position="{{p}}"
+             
+             
+             title="pos: tit"></marker>
+         </ng-map>
+       </div>
+       <!--<div>53.3482993,-6.257899 +> dublin
+            <ng-map center="[53.1302985, -6.7540339]"></ng-map>
+       </div>-->
+  </ion-content>
+</ion-view>
